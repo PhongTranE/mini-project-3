@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 3</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Danh mục sản phẩm</h1>
+        <!-- Button -->
+        <div class="buttonGroup" id="category">
+            <!-- <button class="btn">Abc</button> -->
+        </div>
+
+        <h1 class="heading">Danh sách sản phẩm</h1>
+
+        <div class="requestForm" id="search">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+            <button>Tìm kiếm</button>
+        </div>
+
+        <select id="filter" name="filter">
+            <option value="mac-dinh" selected>Mặc định</option>
+            <option value="incr">Giá thấp đến cao</option>
+            <option value="decr">Giá cao đến thấp</option>
+            <option value="sale">Giá giảm nhiều</option>
+        </select>
+
+        <div class="product__list" id="products">
+            <!-- item 1 -->
+            <!-- <div class="project-item">
+                <img src="" alt="" class="image">
+                <p class="name">Iphone 8</p>
+                <div class="info">
+                    <span class="price">500$</span>
+                    <span class="quantity">Còn lại: 50 sp</span>
+                </div>
+             </div> -->
+        </div>
+        <div class="pagination">
+            <span id="paginationPrev">Prev</span>
+            <span id="paginationNumber">1</span>
+            <span id="paginationNext">Next</span>
+        </div>
+    </div>
+
+    <script type="module" src="./js/category.js"></script>
+    <script type="module" src="./js/products.js"></script>
+</body>
+
+</html>
